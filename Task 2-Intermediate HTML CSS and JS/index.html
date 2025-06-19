@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intermediate Web Development</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Intermediate Web Development</h1>
+    <nav>
+      <ul>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#validation">Validation</a></li>
+        <li><a href="#responsive">Responsive Design</a></li>
+        <li><a href="#dom">DOM Manipulation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Forms Section -->
+    <section id="forms">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject" required />
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <!-- DOM Manipulation Section -->
+    <section id="dom">
+      <h2>DOM Manipulation: To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Add a task" />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ApexPlanet Internship Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
