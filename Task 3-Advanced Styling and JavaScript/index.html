@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Advanced CSS and JavaScript Project</h1>
+    <p>Responsive Design • Interactive Quiz • Carousel • API Integration</p>
+  </header>
+
+  <main class="main-content">
+    <!-- Image Carousel -->
+    <section class="card">
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <button onclick="prevImage()">⬅</button>
+        <img id="carouselImage" src="https://placekitten.com/400/300" alt="Carousel Image" />
+        <button onclick="nextImage()">➡</button>
+      </div>
+    </section>
+
+    <!-- JavaScript Quiz -->
+    <section class="card quiz-container">
+      <h2>JavaScript Quiz</h2>
+      <div id="quiz">
+        <div id="question" class="question">What does HTML stand for?</div>
+        <div class="answers" id="answers">
+          <button class="option-btn">Hyper Text Markup Language</button>
+          <button class="option-btn">Home Tool Markup Language</button>
+          <button class="option-btn">Hyperlinks and Text Markup Language</button>
+        </div>
+        <button class="next-btn" onclick="nextQuestion()">Next Question</button>
+      </div>
+    </section>
+
+    <!-- API Integration -->
+    <section class="card">
+      <h2>Random Joke (API)</h2>
+      <p id="joke">Click the button to get a joke!</p>
+      <button onclick="getJoke()">Get Joke</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
