@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ontipuli Susmitha - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+    }
+
+    nav.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #d0d0d0;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 2rem;
+    }
+
+    .profile-image {
+      background: radial-gradient(circle at center, #ff9a9e 0%, #fad0c4 100%);
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text h3 {
+      color: #ff8a65;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      color: #f0f0f0;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .skill-tag {
+      background-color: #ffffff22;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .about-content {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+      }
+      .profile-image {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#todo" class="nav-link">Todo App</a></li>
+        <li><a href="#products" class="nav-link">Product Filter</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-header">
+        <h1 class="section-title">Full-Stack Developer passionate about <i>creating</i> web solutions</h1>
+      </div>
+      <div class="about-content">
+        <div class="profile-image">👩‍💻</div>
+        <div class="about-text">
+          <h3>Hello, I’m Ontipuli Susmitha</h3>
+          <p>I’m a passionate full-stack developer with over 5 years of experience in creating modern, responsive web applications. I specialize in JavaScript, React, Node.js, and have a keen eye for UI/UX design.</p>
+          <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor adventures. I believe in writing clean, maintainable code and creating user experiences that make a difference.</p>
+          <div class="skills">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">AWS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ontipuli Susmitha | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #34345e);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      background: conic-gradient(from 180deg, #ff6ec4, #7873f5, #4ade80, #ff6ec4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #f87171;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #d1d5db;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+
+    .skill-tag {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="profile-img">
+      <img src="avatar.png" alt="Susmitha Profile" />
+    </div>
+    <h1>Hello, I'm Ontipuli Susmitha</h1>
+    <p>
+      I'm a passionate full-stack developer with over 5 years of experience in creating modern,
+      responsive web applications. I specialize in JavaScript, React, Node.js and have a keen eye for UI/UX design.
+    </p>
+    <p>
+      When I'm not coding, you can find me exploring new technologies, contributing to open-source
+      projects, or enjoying outdoor adventures. I believe in writing clean, maintainable code and
+      crafting user experiences that make a difference.
+    </p>
+    <div class="skills">
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">React</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">MongoDB</span>
+      <span class="skill-tag">PostgreSQL</span>
+      <span class="skill-tag">AWS</span>
+      <span class="skill-tag">Docker</span>
+    </div>
+  </div>
+</body>
+</html>
